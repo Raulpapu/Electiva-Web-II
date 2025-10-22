@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la Palabra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Adivina la Palabra</h1>
+        <p>Descubre la palabra secreta letra por letra</p>
+    </header>
+    
+    <main class="game">
+        <div class="game-container">
+            <div class="word-display" id="wordDisplay">
+                <!-- Aquí se mostrará la palabra oculta -->
+            </div>
+            
+            <div class="info">
+                <p id="attempts">Intentos restantes: <span id="attemptsCount">6</span></p>
+                <p id="category">Categoría: <span id="categoryText">Animales</span></p>
+            </div>
+            
+            <div class="used-letters">
+                <p>Letras usadas: <span id="usedLetters"></span></p>
+            </div>
+            
+            <div class="input-section">
+                <input type="text" id="letterInput" maxlength="1" placeholder="Ingresa una letra">
+                <button id="guessBtn">Adivinar</button>
+            </div>
+            
+            <div class="buttons">
+                <button id="hintBtn">Pista 💡</button>
+                <button id="resetBtn" class="hidden">Jugar de nuevo</button>
+            </div>
+            
+            <div id="message"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>¡Diviértete aprendiendo!</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
